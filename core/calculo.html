@@ -1,0 +1,27 @@
+{% extends 'core/base.html'%}
+{% load static %}
+
+{% block content %} 
+<br>
+<div class="container">
+        
+        <form class="form-login" action="index.html">
+          <h2 class="form-login-heading" style="color:black;"><img src="{% static 'core\img\logo_boven.png' %}" alt=""></h2>
+          <div class="login-wrap" style="background-color: #95F3C6;padding: 40px; ">
+                <h4>Economize até <b>{{dados.fator}}</b> na sua conta de luz!</h4>
+                <main role="main" class="inner cover">
+                        
+                </main>
+                <div class="card">
+                <div class="card-body">
+                        <h1 class="card-title text-center"><b>Economia Mensal</b></h1>
+                        <p class="card-text text-center"><h1 class="text-center">R$ {{dados.economia}}</h1></p>
+                        <p class="card-text text-center"><h5 class="card-text text-center">* Resultado estimado para analise completa envie a fatura para 
+                                <br> E-mail: viabilidade@boven.com.br</h5></p>
+                </div>
+                </div>
+        </div>
+  
+
+
+{% endblock content %}

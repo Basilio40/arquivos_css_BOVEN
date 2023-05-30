@@ -1,0 +1,33 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% load crispy_forms_tags%}
+
+{% block content %} 
+
+              <form class="form-horizontal"  action="{% url 'dados_pessoais' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group col-sm-12 col-lg-12">
+                  <label class="col-sm-2 col-sm-2 control-label"></label>
+                  <div class="col-sm-8 col-lg-8">
+        
+                    <input  style="color: rgb(13, 13, 14);" type="text"  class="form-control" name="nome">
+
+                    <input  style="color: rgb(13, 13, 14);" type="text"  class="form-control" name="email">
+          
+                    <input  style="color: rgb(13, 13, 14);" type="text"  class="form-control" name="empresa">
+        
+                    <input  style="color: rgb(13, 13, 14);" type="text"  class="form-control" name="telefone">
+
+                      <button type="submit" class="btn btn-danger">Enviar</button>
+                      </div>
+                    </div>
+
+                    <br>
+                </form> 
+  
+              
+
+ 
+             
+
+        {% endblock content %}
